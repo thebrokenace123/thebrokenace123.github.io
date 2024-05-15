@@ -748,13 +748,13 @@ a:focus {
 /*******************************/
 /********* Pricing CSS *********/
 /*******************************/
-.price {
+.Location {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
 }
 
-.price .price-item {
+.Location .Location-item {
     position: relative;
     width: 100%;
     display: flex;
@@ -766,20 +766,20 @@ a:focus {
     transition: .3s;
 }
 
-.price .price-item:hover {
+.Location .Location-item:hover {
     background: #fad9e1;
 }
 
-.price .price-img {
+.Location .Location-img {
     position: relative;
     width: 100px;
 }
 
-.price .price-img img {
+.Location .Location-img img {
     width: 100%;
 }
 
-.price .price-img::after {
+.Location .Location-img::after {
     position: absolute;
     content: "";
     top: 10px;
@@ -791,14 +791,14 @@ a:focus {
     z-index: 1;
 }
 
-.price .price-text {
+.Location .Location-text {
     position: relative;
     padding: 0 15px;
     width: calc(100% - 100px);
     overflow: hidden;
 }
 
-.price .price-text h2 {
+.Location .Location-text h2 {
     position: relative;
     margin-bottom: 8px;
     font-size: 16px;
@@ -806,14 +806,19 @@ a:focus {
     white-space: nowrap;
 }
 
-.price .price-text h3 {
+.Location .Location-text h3 {
     position: relative;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
     color: #333333;
 }
-
+.googlereviews {
+    border: 6px solid #8e3563;
+}
+.googlemaps {
+border: 6px solid #8e3563;
+}
 
 /*******************************/
 /*********** Team CSS **********/
@@ -822,10 +827,19 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.team .container {
+    display: inline-block; /* Make the container inline-block */
+    text-align: left; /* Reset the text alignment within the container */
 }
 
 .team .team-item {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    border: 6px solid #8e3563;
+
+
 }
 
 .team .team-img {
@@ -1416,6 +1430,7 @@ a:focus {
     background: #ffffff;
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
 
 .footer .copyright p {
