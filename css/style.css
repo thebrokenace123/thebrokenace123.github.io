@@ -1412,6 +1412,25 @@ border: 6px solid #8e3563;
     letter-spacing: 1px;
 }
 
+.footer .footer-link p {
+    display: block;
+    margin-bottom: 10px;
+    color: #999999;
+    transition: .3s;
+}
+
+.footer .footer-link p::before {
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link p:hover {
+    color: #fad9e1;
+    letter-spacing: 1px;
+}
+
 .footer .footer-contact p i {
     width: 25px;
 }
