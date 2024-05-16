@@ -588,7 +588,38 @@ a:focus {
     }
 }
 
+.viewgallery {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; /* Vertically center the button */
+    position: relative;
+    width: 100%;
+    padding: 0px 30px;
+}
 
+.viewgallery .viewgallery-text p {
+    font-size: 16px;
+}
+
+.viewgallery .viewgallery-text a.btn {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 12px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #8e3563;
+    border: 2px solid #8e3563;
+    border-radius: 0;
+    background: none;
+    transition: .3s;
+}
+
+.viewgallery .viewgallery-text a.btn:hover {
+    color: #fad9e1;
+    background: #8e3563;
+}
 /*******************************/
 /********** About CSS **********/
 /*******************************/
@@ -748,6 +779,12 @@ a:focus {
 /*******************************/
 /********* Pricing CSS *********/
 /*******************************/
+.locationimg {
+    margin-top: 50px;
+    width: 100%;
+    border: 6px solid #8e3563;
+}
+
 .Location {
     position: relative;
     width: 100%;
@@ -813,8 +850,15 @@ a:focus {
     font-weight: 400;
     color: #333333;
 }
+.googlereviewsbtn {
+     color: #797979;
+     background: #ffffff;
+     font-family: 'Open Sans', sans-serif;
+     margin-bottom: 20px;
+}
 .googlereviews {
     border: 6px solid #8e3563;
+    margin-bottom: 20px;
 }
 .googlemaps {
 border: 6px solid #8e3563;
