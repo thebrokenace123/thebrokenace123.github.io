@@ -1,9 +1,7 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
-.mySlides {
-  display: none;
-}
+
 		.slider {
   			max-width: 400px;
   			max-height: 400px;
@@ -289,7 +287,31 @@ a:focus {
     background: #fad9e1;
     overflow: hidden;
 }
+.btn-play {
+    position: relative;
+    z-index: 1; /* Ensure the button stays above other elements */
+    /* Add other button styles as needed */
+}
 
+/* CSS for slider */
+.slider {
+    position: relative;
+    z-index: 0; /* Set a lower z-index to place it below the button */
+    /* Add other slider styles as needed */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767.98px) {
+    /* Positioning for mobile */
+    .hero {
+    overflow: auto;
+    }
+    .slider {
+        position: static; /* Reset position for mobile */
+        margin-left: 10px; /* Adjust margin to place it under the button */
+        margin-top: -300px;
+    }
+}
 .hero .container-fluid {
     padding: 0;
 }
@@ -836,7 +858,7 @@ a:focus {
     position: relative;
     padding: 0 15px;
     width: calc(100% - 100px);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .Location .Location-text h2 {
@@ -969,7 +991,7 @@ border: 6px solid #8e3563;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .testimonial .testimonial-item img {
@@ -1048,7 +1070,7 @@ border: 6px solid #8e3563;
     position: relative;
     margin: 0 15px;
     background: rgba(29, 36, 52, .04);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .blog .blog-page .blog-item {
@@ -1212,7 +1234,7 @@ border: 6px solid #8e3563;
 .portfolio .portfolio-item {
     position: relative;
     margin-bottom: 30px;
-    overflow: hidden;
+    overflow: auto;
     transition: .3s;
 }
 
